@@ -1,0 +1,29 @@
+# Using List in python example 
+print('apple' == 'Apple')
+print('apple' > 'Apple')
+print('A unicode is', ord('A'), ',a unicode is', ord('a'))
+
+
+print('2.3.2' == '2.11.4')
+print('2.3.2' > '2.11.4')
+
+a = '2.3.2'
+b = '2.11.4'
+
+print(id(a), id(b))
+
+les = ['1.2.0', '2.3.1', '2.11.5', '1.6.1', '1.0.2.3.4.5.6.7', 'helloworld', 'hello']
+sl = sorted(les, reverse=True)
+print (sl)
+
+del sl[0]
+del sl[0]
+
+print(sl)
+print(sl[0])
+
+new_list = [6, 4, 5, 8, 9, 3, 2, 1, 11]
+print ('original =', new_list)
+
+sort_new_list = sorted(new_list, reverse=True)
+print ('Sorted Original = ', sort_new_list)
