@@ -1,0 +1,30 @@
+Step 1:Create docker file
+
+FROM python:3
+
+ADD hello.py /
+
+RUN pip install pystrich
+RUN pip install semver
+
+CMD [ "python", "./hello.py" ]
+
+Step 2: Create hello.py script
+
+print('hello hello')
+a = 2
+b = 3
+print(a + b)
+
+Step 3: Run the following command in Windows Command Prompt
+
+docker build -t shark .
+
+Step 4: Run this command
+
+docker run shark 
+
+Step 6: Clean up the environment
+
+docker system prune -af 
+
